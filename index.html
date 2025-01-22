@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple Calculator in JavaScript</title>
+
+
+        <!-- Font Awesome css-->
+        <link rel="stylesheet" href="Content/Css/Vendors/all.min.css">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="Content/Css/Vendors/bootstrap.min.css">
+        <!-- main css -->
+        <link rel="stylesheet" href="Content/Css/Main/style.css">
+    </head>
+    <body>     
+        <div class="container">
+            <div class="calculator">
+                <form>
+                    <div class="display">
+                        <input type="text" name="display" id="display" readonly>
+                    </div>            
+                    <div class="buttons">
+                        <button type="button" class="operator" onclick="clearDisplay()">AC</button>
+                        <button type="button" class="operator" onclick="deleteLast()">DE</button>
+                        <button type="button" class="operator" onclick="appendToDisplay('.')">.</button>
+                        <button type="button" class="operator" onclick="appendToDisplay('/')">/</button>
+                        <button type="button" onclick="appendToDisplay('7')">7</button>
+                        <button type="button" onclick="appendToDisplay('8')">8</button>
+                        <button type="button" onclick="appendToDisplay('9')">9</button>
+                        <button type="button" class="operator" onclick="appendToDisplay('*')">*</button>
+                        <button type="button" onclick="appendToDisplay('4')">4</button>
+                        <button type="button" onclick="appendToDisplay('5')">5</button>
+                        <button type="button" onclick="appendToDisplay('6')">6</button>
+                        <button type="button" class="operator" onclick="appendToDisplay('-')">-</button>
+                        <button type="button" onclick="appendToDisplay('1')">1</button>
+                        <button type="button" onclick="appendToDisplay('2')">2</button>
+                        <button type="button" onclick="appendToDisplay('3')">3</button>
+                        <button type="button" class="operator" onclick="appendToDisplay('+')">+</button>
+                        <button type="button" onclick="appendToDisplay('00')">00</button>
+                        <button type="button" onclick="appendToDisplay('0')">0</button>
+                        <button type="button" class="equal operator" onclick="calculateResult()">=</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    <body>
+
+
+
+
+        <!-- Font Awesome js -->
+        <script src="Content/Js/Vendors/all.min.js"></script>
+        <!-- bootstrap js-->
+        <script src="Content/Js/Vendors/bootstrap.bundle.min.js"></script>
+        <!-- main js -->
+        <script src="Content/Js/Main/main.js"></script>
+    </body>
+</html>
